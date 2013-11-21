@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<overlay id="pons.context.search" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+   <script type="application/x-javascript" src="chrome://pons.context.search/content/pons.context.search.js"/>
+
+   <menupopup id="contentAreaContextMenu">
+     <menuitem id="pons-show" label="Buscar en pons.de [de-es]" oncommand="pons.loadPons()"/>
+   </menupopup>
+</overlay>
