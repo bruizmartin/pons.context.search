@@ -5,7 +5,7 @@ A Firefox extension for enabling pons.de context search
 
 Release Notes:
 
-1.0.0-SNAPSHOT:
+1.0.0:
 - For now it only works for es<->de translation. TODO: make it configurable
 
 Notes:
