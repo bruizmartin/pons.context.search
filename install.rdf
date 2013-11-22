@@ -12,14 +12,14 @@
          with minimum and maximum supported versions. --> 
     <em:targetApplication>
       <Description>
-        <em:id>{8010e28a-93f2-4d6a-b9a1-12bd5ea1e4b1}</em:id>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>1.5</em:minVersion>
-        <em:maxVersion>23</em:maxVersion>
+        <em:maxVersion>25.0</em:maxVersion>
       </Description>
     </em:targetApplication>
    
     <!-- Front End MetaData -->
-    <em:name>pons.context.search</em:name>
+    <em:name>Pons Context Search</em:name>
     <em:description>An extension for enabling pons.de context search</em:description>
     <em:creator>Borja Ruiz Martin</em:creator>
     <em:homepageURL>http://github.com/bruizmartin/pons.context.search</em:homepageURL>

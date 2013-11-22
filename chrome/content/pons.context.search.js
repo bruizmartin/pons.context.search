@@ -29,6 +29,8 @@ function PonsShowHideItems(event)
 function getBrowserSelection() {
   const charLen = 150;
 
+  let commandDispatcher = document.commandDispatcher;
+
   var focusedWindow = commandDispatcher.focusedWindow;
   var selection = focusedWindow.getSelection().toString();
   if (!selection) {
