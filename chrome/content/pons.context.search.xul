@@ -4,6 +4,6 @@
    <script type="application/x-javascript" src="chrome://pons.context.search/content/pons.context.search.js"/>
 
    <menupopup id="contentAreaContextMenu">
-     <menuitem id="pons-show" label="Search in pons.de [de-es]" oncommand="pons.loadPons()"/>
+     <menuitem id="pons-show" label="Search in pons.de [de-es]" oncommand="Pons.loadPons()"/>
    </menupopup>
 </overlay>
