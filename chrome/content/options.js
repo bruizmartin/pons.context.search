@@ -4,7 +4,7 @@ var PonsOptions = {
     init: function(event) {
         this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
                 .getService(Components.interfaces.nsIPrefService)
-                .getBranch("pons.context.search.");
+                .getBranch("extensions.pons.context.search.");
         this.populateOutputLanguageList(this.prefs.getCharPref("inputLanguage"));
         this.selectLanguageFromPrefs();
     },

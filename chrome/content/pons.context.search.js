@@ -20,7 +20,7 @@ var Pons = {
     ponsShowHideItems: function(event)    {
         Pons.prefs = Components.classes["@mozilla.org/preferences-service;1"]
                             .getService(Components.interfaces.nsIPrefService)
-                            .getBranch("pons.context.search.");        
+                            .getBranch("extensions.pons.context.search.");
         var show = document.getElementById("pons-show");
         show.hidden = !gContextMenu.isTextSelected;
         var menuLabel = "search in pons.de [" + Pons.prefs.getCharPref("inputLanguage") + "-"

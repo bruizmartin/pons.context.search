@@ -8,8 +8,8 @@
 <script type="application/javascript" src="chrome://pons.context.search/content/options.js"/>
 <prefpane id="options-pane" label="PONS Context Search Settings">
 	<preferences>
-		<preference id="pref_inputLanguage" name="pons.context.search.inputLanguage" type="string"/>
-		<preference id="pref_outputLanguage" name="pons.context.search.outputLanguage" type="string"/>
+		<preference id="pref_inputLanguage" name="extensions.pons.context.search.inputLanguage" type="string"/>
+		<preference id="pref_outputLanguage" name="extensions.pons.context.search.outputLanguage" type="string"/>
 	</preferences>
 	<label value="Language selection:"/>
 	<groupbox>
