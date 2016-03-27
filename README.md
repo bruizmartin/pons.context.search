@@ -6,7 +6,7 @@ A Firefox extension for enabling pons.de context search
 Release Notes:
 
 1.0.2-SNAPSHOT:
-
+	- Issue #3 - Add preferences panel to configure language to search (from/to)
 
 1.0.1:
 	- Fixes #1 - Wrap JS code into a JS object to avoid conflicts with other installed addons
