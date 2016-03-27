@@ -98,6 +98,7 @@ var PonsOptions = {
                 break;
             case 'la':
                 outputLanguage.appendChild(this.createMenuItem('German', 'de'));
+                break;
             case 'lb':
                 outputLanguage.appendChild(this.createMenuItem('German', 'de'));
                 break;
@@ -159,15 +160,11 @@ var PonsOptions = {
         if (outputList.hasChildNodes()) {
             var outputLanguage = document.getElementById('outputLanguage');
             var children = outputLanguage.childNodes;
-            var i = 0;
-            while (i < children.length) {
+            for (i = 0; i < children.length; i++) {
                 if (children[i].value == languageCode) {
                     var outputList = document.getElementById('outputList');
                     outputList.selectedIndex = i;
-                    break;  
-                }
-                else {
-                    i++;
+                    break;
                 }
             }
         }
