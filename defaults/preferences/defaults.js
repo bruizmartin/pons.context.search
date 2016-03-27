@@ -1,2 +1,2 @@
-pref("pons.context.search.inputlanguage", "de");
-pref("pons.context.search.outputlanguage", "en");
+pref("pons.context.search.inputLanguage", "de");
+pref("pons.context.search.outputLanguage", "en");
