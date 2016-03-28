@@ -17,7 +17,7 @@ var Pons = {
         tBrowser.selectedTab = tab;
     },
 
-    ponsShowHideItems: function(event)    {
+    ponsShowHideItems: function(event) {
         Pons.prefs = Components.classes["@mozilla.org/preferences-service;1"]
                             .getService(Components.interfaces.nsIPrefService)
                             .getBranch("extensions.pons.context.search.");
@@ -47,9 +47,9 @@ var Pons = {
         const charLen = 150;
 
         let commandDispatcher = document.commandDispatcher;
-
         var focusedWindow = commandDispatcher.focusedWindow;
         var selection = focusedWindow.getSelection().toString();
+
         if (!selection) {
             let element = commandDispatcher.focusedElement;
             var isOnTextInput = function isOnTextInput(elem) {
@@ -58,8 +58,7 @@ var Pons = {
             };
 
             if (isOnTextInput(element)) {
-                selection = element.QueryInterface(Ci.nsIDOMNSEditableElement)
-                                                     .editor.selection.toString();
+                selection = element.QueryInterface(Ci.nsIDOMNSEditableElement).editor.selection.toString();
             }
         }
 
@@ -72,14 +71,16 @@ var Pons = {
 
             selection = selection.trim().replace(/\s+/g, " ");
 
-            if (selection.length > charLen)
+            if (selection.length > charLen) {
                 selection = selection.substr(0, charLen);
+            }
         }
+
         return selection;
     }
 }
 
-window.addEventListener("load", function load(event){
+window.addEventListener("load", function load(event) {
     window.removeEventListener("load", load, false);
     Pons.init();
-},false);
+}, false);

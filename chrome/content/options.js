@@ -27,7 +27,7 @@ var PonsOptions = {
 
     populateOutputLanguageList: function(inputLanguage) {
         var outputLanguage = document.getElementById('outputLanguage');
-        while(outputLanguage.hasChildNodes()){
+        while(outputLanguage.hasChildNodes()) {
             outputLanguage.removeChild(outputLanguage.firstChild);
         }
         switch (inputLanguage) {
@@ -171,7 +171,7 @@ var PonsOptions = {
     }
 }
 
-window.addEventListener("load", function load(event){
-window.removeEventListener("load", load, false);
+window.addEventListener("load", function load(event) {
+    window.removeEventListener("load", load, false);
     PonsOptions.init();
-},false);
+}, false);
